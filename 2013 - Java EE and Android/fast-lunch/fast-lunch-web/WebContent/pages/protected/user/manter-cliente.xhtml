@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Cliente</title>
+</h:head>
+
+<h:body>
+
+	<p:growl id="messages" />
+
+	<p>Cadastro de Cliente</p>
+
+	<h:form>
+		<h:panelGrid columns="2">
+			<h:outputLabel for="cliente_nome" value="Nome: " />
+			<h:inputText id="cliente_nome" value="#{clienteMB.clienteDTOLogado.nome}" />
+
+			<h:outputLabel for="cliente_sobrenome" value="Sobrenome: " />
+			<h:inputText id="cliente_sobrenome"
+				value="#{clienteMB.clienteDTOLogado.sobrenome}" />
+
+			<h:outputLabel for="cliente_cpf" value="CPF: " />
+			<h:inputText id="cliente_cpf" value="#{clienteMB.clienteDTOLogado.cpf}" />
+
+			<h:outputLabel for="cliente_telefone" value="Telefone: " />
+			<h:inputText id="cliente_telefone"
+				value="#{clienteMB.clienteDTOLogado.telefone}" />
+
+			<h:outputLabel for="cliente_email" value="Email: " />
+			<h:inputText id="cliente_email" value="#{clienteMB.clienteDTOLogado.email}" />
+
+			<h:outputLabel for="cliente_sexo" value="Sexo: " />
+			<h:inputText id="cliente_sexo" value="#{clienteMB.clienteDTOLogado.sexo}" />
+
+
+
+			<h:outputLabel for="cliente_usuario_login" value="Login: " />
+			<h:inputText id="cliente_usuario_login"
+				value="#{clienteMB.clienteDTOLogado.usuario.login}" />
+
+			<h:outputLabel for="cliente_usuario_senha" value="Senha: " />
+			<h:inputSecret id="cliente_usuario_senha" 
+				value="#{clienteMB.clienteDTOLogado.usuario.senha}" />
+
+
+
+			<h:outputLabel for="cliente_endereco_logradouro" value="Logradouro: " />
+			<h:inputText id="cliente_endereco_logradouro"
+				value="#{clienteMB.clienteDTOLogado.enderecos[0].logradouro}" />
+
+			<h:outputLabel for="cliente_endereco_numero" value="Numero: " />
+			<h:inputText id="cliente_endereco_numero"
+				value="#{clienteMB.clienteDTOLogado.enderecos[0].numero}" />
+
+			<h:outputLabel for="cliente_endereco_complemento"
+				value="Complemento: " />
+			<h:inputText id="cliente_endereco_complemento"
+				value="#{clienteMB.clienteDTOLogado.enderecos[0].complemento}" />
+
+			<h:outputLabel for="cliente_endereco_bairro" value="Bairro:  " />
+			<h:inputText id="cliente_endereco_bairro"
+				value="#{clienteMB.clienteDTOLogado.enderecos[0].bairro}" />
+
+			<h:outputLabel for="cliente_endereco_cidade" value="Cidade: " />
+			<h:inputText id="cliente_endereco_cidade"
+				value="#{clienteMB.clienteDTOLogado.enderecos[0].cidade}" />
+
+			<h:outputLabel for="cliente_endereco_uf" value="UF: " />
+			<h:inputText id="cliente_endereco_uf"
+				value="#{clienteMB.clienteDTOLogado.enderecos[0].uf}" />
+
+			<h:outputLabel for="cliente_endereco_cep" value="CEP: " />
+			<h:inputText id="cliente_endereco_cep"
+				value="#{clienteMB.clienteDTOLogado.enderecos[0].cep}" />
+
+
+			<h:commandButton action="#{clienteMB.atualizarCliente()}" value="Salvar Alterações" />
+
+		</h:panelGrid>
+	</h:form>
+
+</h:body>
+</html>

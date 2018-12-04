@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Cadastro de Tipo de Pagamento</title>
+</h:head>
+
+<h:body>
+
+	<p:growl id="messages" />
+
+	<h:form>
+
+		<h:panelGrid columns="2">
+
+			<h:outputLabel value="Estabelecimento: " />
+			<h:outputLabel value="#{tipoPagamentoMB.estabelecimentoDTO.nomeFantasia}" />
+
+			<h:outputLabel for="tipo_pagamento_descricao" value="Descrição: " />
+			<h:inputText id="tipo_pagamento_descricao" value="#{tipoPagamentoMB.tipoPagamentoDTO.descricao}" />
+
+			<h:commandButton action="#{tipoPagamentoMB.salvarTipoPagamento()}"
+				value="Salvar Tipo de Pagamento" />
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>

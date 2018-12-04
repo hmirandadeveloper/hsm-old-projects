@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Manter Cargos</title>
+</h:head>
+
+<h:body>
+
+	<p:growl id="messages" />
+
+	<h:form>
+		<h:outputLabel value="Estabelecimento: " />
+		<h:outputLabel value="#{cargoMB.estabelecimentoDTO.nomeFantasia}" />
+		<h:dataTable value="#{cargoMB.cargos}" var="cargo" cellspacing="10"
+			cellpadding="5">
+			<h:column>
+				<f:facet name="header">Descrição</f:facet>
+					#{cargo.descricao}
+			</h:column>
+			<h:column>
+				<f:facet name="header"></f:facet>
+				<h:commandButton action="#{cargoMB.atualizarCargo(cargo.idCargo)}"
+					value="Alterar" />
+			</h:column>
+			<h:column>
+				<f:facet name="header"></f:facet>
+				<h:commandButton action="#{cargoMB.removerCargo(cargo.idCargo)}"
+					value="Remover" />
+			</h:column>
+
+		</h:dataTable>
+
+		<h:panelGrid columns="2">
+
+			<h:outputLabel for="cargo_descricao" value="Cargo: " />
+			<h:inputText id="cargo_descricao"
+				value="#{cargoMB.cargoDTOSelecionado.descricao}" />
+
+			<h:commandButton action="#{cargoMB.atualizarCargo()}"
+				value="Salvar Alterações" />
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>

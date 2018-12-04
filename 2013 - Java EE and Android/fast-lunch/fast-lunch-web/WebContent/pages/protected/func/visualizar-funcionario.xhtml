@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+	<h:head>
+		<title>Funcionario</title>
+	</h:head>
+	
+	<h:body>
+		<p>Cadastro de Funcionario</p>
+		
+		<h:form>
+			<h:panelGrid columns="2">
+			
+				<h:outputText value="Estabelecimento: " />
+				<h:outputText value="#{funcionarioMB.estabelecimentoDTO.nomeFantasia}" />			
+							
+				<h:outputLabel for="funcionario_nome_lb" value="Nome: " />
+				<h:outputText id="funcionario_nome_lb" value="#{funcionarioMB.funcionarioLogado.nome}" />
+				
+				<h:outputLabel for="funcionario_sobrenome_lb" value="Sobrenome: " />
+				<h:outputText id="funcionario_sobrenome_lb" value="#{funcionarioMB.funcionarioLogado.sobrenome}" />
+				
+				<h:outputLabel for="funcionario_matricula_lb" value="Matrícula: " />
+				<h:outputText id="funcionario_matricula_lb" value="#{funcionarioMB.funcionarioLogado.matricula}" />
+				
+				<h:outputLabel for="funcionario_usuario_login_lb" value="Usuário: " />
+				<h:outputText id="funcionario_usuario_login_lb" value="#{funcionarioMB.funcionarioLogado.usuario.login}" />
+				
+				<h:outputLabel for="funcionario_cargo_lb" value="Cargo: " />
+				<h:outputText id="funcionario_cargo_lb" value="#{funcionarioMB.funcionarioLogado.cargo.descricao}" />
+								
+			</h:panelGrid>
+		</h:form>
+	</h:body>
+</html>

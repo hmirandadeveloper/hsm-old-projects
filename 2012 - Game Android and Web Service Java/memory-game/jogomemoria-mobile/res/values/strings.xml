@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Jogo da Memória</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Configurações</string>
+    <string name="game_title">Toque para iniciar o jogo!</string>
+    <string name="score_lb">Pontuação: </string>
+    <string name="gameover">Fim de Jogo!</string>
+    <string name="turn">Pode Jogar!</string>
+    <string name="player_lb">Jogador: </string>
+    <string name="wait">Observe e aguarde!</string>
+    <string name="validation">Cartas incorretas! Aguarde.</string>
+    <string name="win">Venceu!!!</string>
+    <string name="lose">Perdeu!!!</string>
+    <string name="title_activity_login">Login</string>
+    <string name="action_settings">Configurações</string>
+    <string name="login">Identificação</string>
+    <string name="user_lb">Usuario</string>
+    <string name="welcome">Bem vindo: </string>
+    <string name="bt_new_game">Novo jogo</string>
+    <string name="bt_back">Voltar</string>
+    <string name="bt_login">Avançar</string>
+    <string name="bt_ranking">Visualizar Ranking</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_ranking">RankingActivity</string>
+    <string name="list_ranking"> Ranking das Partidas</string>
+    <string name="name_empty">Por favor, digite o seu Nome</string>
+
+</resources>

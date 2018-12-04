@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+	<ui:composition template="/WEB-INF/template/template_root.xhtml" >
+		<ui:define name="content">
+			<h:outputStylesheet name="formulario_autenticacao.css" library="css"></h:outputStylesheet>
+			<h:form id="form_ranking">
+			
+					<p:dataTable id="tb_ranking" selectionMode="single" paginator="true" rows="10"
+					value="#{rankingBean.rankingsModelo}" 
+					var="ranking" 
+					emptyMessage="Nenhum RANKING Cadastrado">
+						
+					<p:ajax event="rowSelect" update=":#{p:component('tb_ranking')}"></p:ajax>
+					<p:ajax event="rowUnselect" update=":#{p:component('tb_ranking')}"></p:ajax>
+						
+					<f:facet name="header">
+							RANKING DOS JOGADORES
+					</f:facet>
+					
+					<p:column headerText="Jogador">#{ranking.nome}</p:column>
+					<p:column headerText="Pontuação">#{ranking.pontuacao}</p:column>
+					<p:column headerText="Data">#{ranking.data}</p:column>
+
+				</p:dataTable>	
+									
+			</h:form>		
+		</ui:define>
+	</ui:composition>
+</html>

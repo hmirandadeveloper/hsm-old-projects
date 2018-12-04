@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Horário de Funcionamento do Estabelecimento</title>
+</h:head>
+
+<h:body>
+
+	<p:growl id="messages" />
+
+	<p>Cadastro de Horário de Funcionamento do Estabelecimento</p>
+
+	<h:form>
+		<h:panelGrid columns="2">
+
+			<h:outputText value="Estabelecimento: " />
+			<h:outputText
+				value="#{horarioFuncionamentoEstabelecimentoMB.estabelecimentoDTO.nomeFantasia}" />
+
+			<h:outputLabel for="horarioFuncionamentoEstabelecimento_abertura" value="Horário de Abertura: " />
+			<h:inputText id="horarioFuncionamentoEstabelecimento_abertura"
+				value="#{horarioFuncionamentoEstabelecimentoMB.horarioFuncionamentoEstabelecimentoDTO.horarioFuncionamento.horarioAbertura}">
+					<f:convertDateTime pattern="HH:mm" />
+				</h:inputText>
+
+			<h:outputLabel for="horarioFuncionamentoEstabelecimento_fechamento" value="Horário de Fechamento: " />
+			<h:inputText id="horarioFuncionamentoEstabelecimento_fechamento"
+				value="#{horarioFuncionamentoEstabelecimentoMB.horarioFuncionamentoEstabelecimentoDTO.horarioFuncionamento.horarioFechamento}">
+					<f:convertDateTime pattern="HH:mm" />
+				</h:inputText>
+
+			<h:outputLabel for="horarioFuncionamentoEstabelecimento_dia_semana" value="Dia da Semana: " />
+			<h:selectOneMenu id="horarioFuncionamentoEstabelecimento_dia_semana"
+				value="#{horarioFuncionamentoEstabelecimentoMB.horarioFuncionamentoEstabelecimentoDTO.horarioFuncionamento.diaSemana}">
+				<f:selectItems value="#{horarioFuncionamentoEstabelecimentoMB.diasSemana}" var="dia"
+					itemLabel="#{dia}" itemValue="#{dia}" />
+			</h:selectOneMenu>
+
+			<h:commandButton action="#{horarioFuncionamentoEstabelecimentoMB.salvarHorarioFuncionamentoEstabelecimento()}"
+				value="Salvar Horário de Funcionamento (Estabelecimento)" />
+
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>

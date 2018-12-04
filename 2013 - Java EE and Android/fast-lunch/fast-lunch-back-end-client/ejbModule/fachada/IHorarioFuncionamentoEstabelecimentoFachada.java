@@ -1,0 +1,22 @@
+package fachada;
+
+import java.util.List;
+
+import negocio.exception.EntidadeAtributoIncompletoException;
+import negocio.exception.EntidadeInexistenteException;
+import negocio.exception.EntidadeJaCadastradaException;
+import constantes.EDiaSemana;
+import constantes.ETipoUsuario;
+import dto.HorarioFuncionamentoEstabelecimentoDTO;
+
+public interface IHorarioFuncionamentoEstabelecimentoFachada {
+	public abstract void salvar(HorarioFuncionamentoEstabelecimentoDTO horarioFuncionamentoEstabelecimentoDTO) throws 
+	EntidadeAtributoIncompletoException, EntidadeJaCadastradaException;
+	public abstract void remover(long horarioFuncionamentoEstabelecimentoId, ETipoUsuario tipoUsuario) throws 
+	EntidadeInexistenteException;
+	public abstract HorarioFuncionamentoEstabelecimentoDTO atualizar(HorarioFuncionamentoEstabelecimentoDTO horarioFuncionamentoEstabelecimentoDTO) throws 
+	EntidadeInexistenteException, EntidadeAtributoIncompletoException;
+	public abstract HorarioFuncionamentoEstabelecimentoDTO buscar(long horarioFuncionamentoEstabelecimentoId);
+	public abstract List<HorarioFuncionamentoEstabelecimentoDTO> buscarTodos(Long idEstabelecimento);
+	public abstract HorarioFuncionamentoEstabelecimentoDTO buscarPorDia(Long idEstabelecimento, EDiaSemana diaSemana);
+}

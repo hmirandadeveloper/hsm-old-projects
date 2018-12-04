@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+	<h:head>
+		<title>Estabelecimento</title>
+	</h:head>
+	
+	<h:body>
+		<p:growl id="messages" />
+		
+		<p>Cadastro de Estabelecimento</p>		
+				
+		<h:form>
+		
+			<h:panelGrid columns="2">
+				<h:outputLabel for="estabelecimento_cnpj" value="CNPJ: " />
+				<h:inputText id="estabelecimento_cnpj" value="#{estabelecimentoMB.estabelecimentoDTO.cnpj}" />
+				
+				<h:outputLabel for="estabelecimento_rs" value="Razão Social: " />
+				<h:inputText id="estabelecimento_rs" value="#{estabelecimentoMB.estabelecimentoDTO.razaoSocial}" />
+				
+				<h:outputLabel for="estabelecimento_nf" value="Nome Fantasia: " />
+				<h:inputText id="estabelecimento_nf" value="#{estabelecimentoMB.estabelecimentoDTO.nomeFantasia}" />
+				
+				<h:outputLabel for="estabelecimento_telefone" value="Telefone: " />
+				<h:inputText id="estabelecimento_telefone" value="#{estabelecimentoMB.estabelecimentoDTO.telefone}" />
+				
+				<h:outputLabel for="estabelecimento_email" value="Email: " />
+				<h:inputText id="estabelecimento_email" value="#{estabelecimentoMB.estabelecimentoDTO.email}" />
+				
+				<h:outputLabel for="estabelecimento_tipo" value="Tipo (MATRIZ/FILIAL): " />
+				<h:inputText id="estabelecimento_tipo" value="#{estabelecimentoMB.estabelecimentoDTO.tipoEstabelecimento}" />
+				
+
+	
+				<h:outputLabel for="estabelecimento_endereco_logradouro" value="Logradouro: " />
+				<h:inputText id="estabelecimento_endereco_logradouro" value="#{estabelecimentoMB.estabelecimentoDTO.enderecoDTO.logradouro}" />
+				
+				<h:outputLabel for="estabelecimento_endereco_numero" value="Numero: " />
+				<h:inputText id="estabelecimento_endereco_numero" value="#{estabelecimentoMB.estabelecimentoDTO.enderecoDTO.numero}" />
+				
+				<h:outputLabel for="estabelecimento_endereco_complemento" value="Complemento: " />
+				<h:inputText id="estabelecimento_endereco_complemento" value="#{estabelecimentoMB.estabelecimentoDTO.enderecoDTO.complemento}" />
+				
+				<h:outputLabel for="estabelecimento_endereco_bairro" value="Bairro:  " />
+				<h:inputText id="estabelecimento_endereco_bairro" value="#{estabelecimentoMB.estabelecimentoDTO.enderecoDTO.bairro}" />
+				
+				<h:outputLabel for="estabelecimento_endereco_cidade" value="Cidade: " />
+				<h:inputText id="estabelecimento_endereco_cidade" value="#{estabelecimentoMB.estabelecimentoDTO.enderecoDTO.cidade}" />
+				
+				<h:outputLabel for="estabelecimento_endereco_uf" value="UF: " />
+				<h:inputText id="estabelecimento_endereco_uf" value="#{estabelecimentoMB.estabelecimentoDTO.enderecoDTO.uf}" />
+				
+				<h:outputLabel for="estabelecimento_endereco_cep" value="CEP: " />
+				<h:inputText id="estabelecimento_endereco_cep" value="#{estabelecimentoMB.estabelecimentoDTO.enderecoDTO.cep}" />
+				
+				
+				<h:commandButton action="#{estabelecimentoMB.salvarEstabelecimento()}" value="Salvar" />
+				
+			</h:panelGrid>
+		</h:form>
+	</h:body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Pedido</title>
+</h:head>
+
+<h:body>
+
+	<p:growl id="messages" />
+
+	<p>Cadastro de Pedido</p>
+
+	<h:form>
+		
+		<h:dataTable value="#{pedidoMB.pedidos}" var="pedido" cellpadding="10">
+			<h:column>
+				<f:facet name="header">
+					Nº do Pedido
+				</f:facet>
+				#{pedido.numeroPedido}
+			</h:column>
+			<h:column>
+				<f:facet name="header">
+					Funcionario
+				</f:facet>
+				#{pedido.funcionario.nome}
+			</h:column>
+			<h:column>
+				<f:facet name="header">
+					Cliente
+				</f:facet>
+				#{pedido.cliente.nome}
+			</h:column>
+			<h:column>
+				<f:facet name="header">
+					Valor
+				</f:facet>
+				R$ #{pedido.valorTotal}
+			</h:column>
+			<h:column>
+				<f:facet name="header">
+					Data do Pedido
+				</f:facet>
+				<h:outputText value="#{pedido.dataPedido}">
+					<f:convertDateTime pattern="dd/MM/yyyy - HH:mm"/>
+				</h:outputText>		
+			</h:column>
+			<h:column>
+				<h:commandButton value="Alterar" action="#{pedidoMB.atualizarPedido(pedido.idPedido)}" />
+			</h:column>		
+			<h:column>
+				<h:commandButton value="Remover" action="#{pedidoMB.removerPedido(pedido.idPedido)}" />
+			</h:column>
+			<h:column>
+				
+			</h:column>												
+		</h:dataTable>
+		
+		<h:panelGrid columns="2" rendered="#{pedidoMB.pedidoDTO.idPedido != null ? 'true' : 'false'}">
+
+			<h:outputText value="Estabelecimento: " />
+			<h:outputText value="#{pedidoMB.estabelecimentoDTO.nomeFantasia}" />
+
+			<h:outputLabel for="pedido_cliente" value="Cliente: " />
+			<h:outputText id="pedido_cliente"
+				value="#{pedidoMB.pedidoDTO.cliente.nome}" />
+
+			<h:outputLabel for="pedido_funcionario" value="Funcionario: " />
+			<h:outputText id="pedido_funcionario"
+				value="#{pedidoMB.funcionarioLogado.nome}" />
+
+			<h:outputLabel for="pedido_data" value="Data: " />
+			<h:outputText id="pedido_data" value="#{pedidoMB.data}">
+				<f:convertDateTime pattern="dd/MM/yyyy" />
+			</h:outputText>
+
+			<h:outputLabel for="pedido_cardapio" value="Cardapio: " />
+			<h:selectOneMenu id="pedido_cardapio"
+				value="#{cardapioProdutoMB.cardapioSelecionado}"
+				converter="cardapioConverter"
+				valueChangeListener="#{cardapioProdutoMB.cardapioSelecionado}">
+
+				<f:ajax event="valueChange" render="pedido_panel_produto pedido_panel_tipo_pagamento @form"></f:ajax>
+				<f:selectItem itemLabel="Selecione um item" itemValue=""/>
+				<f:selectItems value="#{cardapioMB.cardapios}" var="cardapio"
+					itemLabel="#{cardapio.nome}" />
+			</h:selectOneMenu>
+		</h:panelGrid>
+		<h:panelGrid columns="1" rendered="#{pedidoMB.pedidoDTO.idPedido != null ? 'true' : 'false'}">
+		<h:panelGrid columns="5" id="pedido_panel_produto">
+			<h:outputLabel id="pedido_produto_lb" for="pedido_produto"
+				value="Produto: "/>
+			<h:selectOneMenu id="pedido_produto"
+				value="#{pedidoMB.itemPedidoDTO.cardapioProduto}"
+				converter="cardapioProdutoConverter">
+				<f:selectItems value="#{cardapioProdutoMB.produtos}" var="produto"
+					itemLabel="#{produto.produto.nome}" />
+				<f:ajax></f:ajax>
+			</h:selectOneMenu>
+
+			<h:outputLabel for="pedido_quantidade" value="Quantidade: " />
+			<h:inputText id="pedido_quantidade"
+				value="#{pedidoMB.itemPedidoDTO.quantidade}" />
+
+			<h:commandButton action="#{pedidoMB.adicionarProdutoNocarrinho()}"
+				value="Adicionar ao Pedido" />
+		</h:panelGrid>
+
+		<h:dataTable value="#{pedidoMB.pedidoDTO.itemPedidos}"
+			var="itemPedido" cellpadding="10"
+			>
+			<h:column>
+				<f:facet name="header">Produto</f:facet>
+				#{itemPedido.cardapioProduto.produto.nome}
+			</h:column>
+			<h:column>
+				<f:facet name="header">Valor</f:facet>
+				#{itemPedido.cardapioProduto.produto.precoPromocional > 0 ? 
+				itemPedido.cardapioProduto.produto.precoPromocional : 
+				itemPedido.cardapioProduto.produto.preco}
+			</h:column>			
+			<h:column>
+				<f:facet name="header">Quantidade</f:facet>
+				#{itemPedido.quantidade}
+			</h:column>
+			<h:column>
+				<f:facet name="header">Valor total</f:facet>
+				#{itemPedido.cardapioProduto.produto.precoPromocional > 0 ? 
+				itemPedido.cardapioProduto.produto.precoPromocional * itemPedido.quantidade : 
+				itemPedido.cardapioProduto.produto.preco * itemPedido.quantidade}
+			</h:column>
+			<h:column>
+				<h:commandButton value="Remover Item" action="#{pedidoMB.removerProdutoDoCarrinho(itemPedido)}" />
+			</h:column>
+		</h:dataTable>
+		
+		<h:outputText value="Valor Total do Pedido #{pedidoMB.valorTotal}" />
+		<br />
+		<h:panelGrid columns="4" id="pedido_panel_tipo_pagamento">
+			<h:outputLabel id="pedido_tipo_pagamento_lb" for="pedido_tipo_pagamento"
+				value="Tipo de Pagamento: "/>
+			<h:selectOneMenu id="pedido_tipo_pagamento"
+				value="#{pedidoMB.tipoPagamentoDTO}"
+				converter="tipoPagamentoConverter">
+				<f:selectItems value="#{tipoPagamentoMB.tipoPagamentos}" var="tipo_pagamento"
+					itemLabel="#{tipo_pagamento.descricao}" />
+				<f:ajax></f:ajax>
+			</h:selectOneMenu>
+
+			<h:commandButton action="#{pedidoMB.adicionarTipoDePagamento()}"
+				value="Adicionar Tipo de Pagamento" />
+		</h:panelGrid>
+		
+		<h:dataTable value="#{pedidoMB.pedidoDTO.tipoPagamentos}"
+			var="tipoPagamento" cellpadding="10"
+			>
+			<h:column>
+				<f:facet name="header">Tipo de Pagamento</f:facet>
+				#{tipoPagamento.descricao}
+			</h:column>
+			<h:column>
+				<h:commandButton value="Remover Item" action="#{pedidoMB.removerTipoPagamento(tipoPagamento)}" />
+			</h:column>
+		</h:dataTable>
+		
+		<h:commandButton action="#{pedidoMB.atualizarPedido()}"
+			value="Alterar Pedido" />
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>

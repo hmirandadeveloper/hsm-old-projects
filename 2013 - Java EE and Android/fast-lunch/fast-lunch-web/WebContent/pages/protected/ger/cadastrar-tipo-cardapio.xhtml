@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Cadastro de Tipo de Cardapio</title>
+</h:head>
+
+<h:body>
+
+	<p:growl id="messages" />
+
+	<h:form>
+
+		<h:panelGrid columns="2">
+
+			<h:outputLabel value="Estabelecimento: " />
+			<h:outputLabel value="#{tipoCardapioMB.estabelecimentoDTO.nomeFantasia}" />
+
+			<h:outputLabel for="tipo_cardapio_nome" value="Nome: " />
+			<h:inputText id="tipo_cardapio_nome" value="#{tipoCardapioMB.tipoCardapioDTO.nome}" />
+
+			<h:outputLabel for="tipo_cardapio_descricao" value="Descrição: " />
+			<h:inputText id="tipo_cardapio_descricao" value="#{tipoCardapioMB.tipoCardapioDTO.descricao}" />
+
+			<h:commandButton action="#{tipoCardapioMB.salvarTipoCardapio()}"
+				value="Salvar Tipo de Cardapio" />
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>

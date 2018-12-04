@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://acao" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://acao" xmlns:intf="http://acao" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://acao" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="regitrarRanking">
+    <complexType>
+     <sequence>
+      <element name="nome" type="xsd:string"/>
+      <element name="pontuacao" type="xsd:string"/>
+      <element name="data" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="regitrarRankingResponse">
+    <complexType>
+     <sequence>
+      <element name="regitrarRankingReturn" type="xsd:boolean"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="regitrarRankingRequest">
+
+      <wsdl:part element="impl:regitrarRanking" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="regitrarRankingResponse">
+
+      <wsdl:part element="impl:regitrarRankingResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="RankingWS">
+
+      <wsdl:operation name="regitrarRanking">
+
+         <wsdl:input message="impl:regitrarRankingRequest" name="regitrarRankingRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:regitrarRankingResponse" name="regitrarRankingResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="RankingWSSoapBinding" type="impl:RankingWS">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="regitrarRanking">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="regitrarRankingRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="regitrarRankingResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="RankingWSService">
+
+      <wsdl:port binding="impl:RankingWSSoapBinding" name="RankingWS">
+
+         <wsdlsoap:address location="http://localhost:8080/jogomemoria.web/services/RankingWS"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

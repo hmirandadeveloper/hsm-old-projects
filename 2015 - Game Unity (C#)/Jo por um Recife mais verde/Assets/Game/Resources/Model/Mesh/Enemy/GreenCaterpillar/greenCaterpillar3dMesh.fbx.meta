@@ -1,0 +1,2057 @@
+fileFormatVersion: 2
+guid: 03f8d6a8d071a93439adb29e1e4524a3
+timeCreated: 1446742647
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Armature
+    100002: body
+    100004: eye_L
+    100006: eye_L_end
+    100008: eye_R
+    100010: eye_R_end
+    100012: eyebrow
+    100014: eyebrow 1
+    100016: eyebrow_L
+    100018: eyebrow_L.001
+    100020: eyebrow_L.002
+    100022: eyebrow_L.002_end
+    100024: eyebrow_R
+    100026: eyebrow_R.001
+    100028: eyebrow_R.002
+    100030: eyebrow_R.002_end
+    100032: eyeL
+    100034: eyeR
+    100036: eyeTracker
+    100038: eyeTracker_end
+    100040: floor
+    100042: floor_end
+    100044: //RootNode
+    100046: head
+    100048: master
+    100050: neck
+    100052: paw1_L
+    100054: paw1_L_end
+    100056: paw1_R
+    100058: paw1_R_end
+    100060: paw2_L
+    100062: paw2_L_end
+    100064: paw2_R
+    100066: paw2_R_end
+    100068: paw3_L
+    100070: paw3_L_end
+    100072: paw3_R
+    100074: paw3_R_end
+    100076: paw4_L
+    100078: paw4_L_end
+    100080: paw4_R
+    100082: paw4_R_end
+    100084: paw5_L
+    100086: paw5_L_end
+    100088: paw5_R
+    100090: paw5_R_end
+    100092: paw6_L
+    100094: paw6_L_end
+    100096: paw6_R
+    100098: paw6_R_end
+    100100: paw7_L
+    100102: paw7_L_end
+    100104: paw7_R
+    100106: paw7_R_end
+    100108: pivotSpineDownA
+    100110: pivotSpineDownA_end
+    100112: pivotSpineDownB
+    100114: pivotSpineDownB_end
+    100116: pivotSpineUpA
+    100118: pivotSpineUpA_end
+    100120: pivotSpineUpB
+    100122: pivotSpineUpB_end
+    100124: rotEyebrow_L
+    100126: rotEyebrow_L_end
+    100128: rotEyebrow_R
+    100130: rotEyebrow_R_end
+    100132: RotSpineDown
+    100134: RotSpineDown_end
+    100136: RotSpineUp
+    100138: RotSpineUp_end
+    100140: rotTail
+    100142: rotTail_end
+    100144: spineBase
+    100146: spineDown
+    100148: spineDown.001
+    100150: spineDown.002
+    100152: spineDown.003
+    100154: spineDown.004
+    100156: spineDown.005
+    100158: spineDown.006
+    100160: spineDown.007
+    100162: spineDown.008
+    100164: spineDown.009
+    100166: spineDown.009_end
+    100168: spineUp
+    100170: spineUp.001
+    100172: spineUp.002
+    100174: spineUp.003
+    400000: Armature
+    400002: body
+    400004: eye_L
+    400006: eye_L_end
+    400008: eye_R
+    400010: eye_R_end
+    400012: eyebrow
+    400014: eyebrow 1
+    400016: eyebrow_L
+    400018: eyebrow_L.001
+    400020: eyebrow_L.002
+    400022: eyebrow_L.002_end
+    400024: eyebrow_R
+    400026: eyebrow_R.001
+    400028: eyebrow_R.002
+    400030: eyebrow_R.002_end
+    400032: eyeL
+    400034: eyeR
+    400036: eyeTracker
+    400038: eyeTracker_end
+    400040: floor
+    400042: floor_end
+    400044: //RootNode
+    400046: head
+    400048: master
+    400050: neck
+    400052: paw1_L
+    400054: paw1_L_end
+    400056: paw1_R
+    400058: paw1_R_end
+    400060: paw2_L
+    400062: paw2_L_end
+    400064: paw2_R
+    400066: paw2_R_end
+    400068: paw3_L
+    400070: paw3_L_end
+    400072: paw3_R
+    400074: paw3_R_end
+    400076: paw4_L
+    400078: paw4_L_end
+    400080: paw4_R
+    400082: paw4_R_end
+    400084: paw5_L
+    400086: paw5_L_end
+    400088: paw5_R
+    400090: paw5_R_end
+    400092: paw6_L
+    400094: paw6_L_end
+    400096: paw6_R
+    400098: paw6_R_end
+    400100: paw7_L
+    400102: paw7_L_end
+    400104: paw7_R
+    400106: paw7_R_end
+    400108: pivotSpineDownA
+    400110: pivotSpineDownA_end
+    400112: pivotSpineDownB
+    400114: pivotSpineDownB_end
+    400116: pivotSpineUpA
+    400118: pivotSpineUpA_end
+    400120: pivotSpineUpB
+    400122: pivotSpineUpB_end
+    400124: rotEyebrow_L
+    400126: rotEyebrow_L_end
+    400128: rotEyebrow_R
+    400130: rotEyebrow_R_end
+    400132: RotSpineDown
+    400134: RotSpineDown_end
+    400136: RotSpineUp
+    400138: RotSpineUp_end
+    400140: rotTail
+    400142: rotTail_end
+    400144: spineBase
+    400146: spineDown
+    400148: spineDown.001
+    400150: spineDown.002
+    400152: spineDown.003
+    400154: spineDown.004
+    400156: spineDown.005
+    400158: spineDown.006
+    400160: spineDown.007
+    400162: spineDown.008
+    400164: spineDown.009
+    400166: spineDown.009_end
+    400168: spineUp
+    400170: spineUp.001
+    400172: spineUp.002
+    400174: spineUp.003
+    2300000: eyeL
+    2300002: eyeR
+    3300000: eyeL
+    3300002: eyeR
+    4300000: eyeL
+    4300002: eyeR
+    4300004: body
+    4300006: eyebrow
+    7400000: Armature|eat
+    7400002: Armature|flip
+    7400004: Armature|heal
+    7400006: Armature|idle
+    7400008: Armature|jump
+    7400010: Armature|knead
+    7400012: Armature|prepareAttack
+    7400014: Armature|walk
+    9500000: //RootNode
+    13700000: body
+    13700002: eyebrow
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|eat
+      takeName: Armature|eat
+      firstFrame: 0
+      lastFrame: 109
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: .831202984
+        functionName: HasEat
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: .997142851
+        functionName: ActionEnd
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/master
+        weight: 1
+      - path: Armature/master/eyeTracker
+        weight: 1
+      - path: Armature/master/eyeTracker/eyeTracker_end
+        weight: 1
+      - path: Armature/master/floor
+        weight: 1
+      - path: Armature/master/floor/floor_end
+        weight: 1
+      - path: Armature/master/pivotSpineDownA
+        weight: 1
+      - path: Armature/master/pivotSpineDownA/pivotSpineDownA_end
+        weight: 1
+      - path: Armature/master/pivotSpineDownB
+        weight: 1
+      - path: Armature/master/pivotSpineDownB/pivotSpineDownB_end
+        weight: 1
+      - path: Armature/master/pivotSpineUpA
+        weight: 1
+      - path: Armature/master/pivotSpineUpA/pivotSpineUpA_end
+        weight: 1
+      - path: Armature/master/pivotSpineUpB
+        weight: 1
+      - path: Armature/master/pivotSpineUpB/pivotSpineUpB_end
+        weight: 1
+      - path: Armature/master/rotEyebrow_L
+        weight: 1
+      - path: Armature/master/rotEyebrow_L/rotEyebrow_L_end
+        weight: 1
+      - path: Armature/master/rotEyebrow_R
+        weight: 1
+      - path: Armature/master/rotEyebrow_R/rotEyebrow_R_end
+        weight: 1
+      - path: Armature/master/RotSpineDown
+        weight: 1
+      - path: Armature/master/RotSpineDown/RotSpineDown_end
+        weight: 1
+      - path: Armature/master/RotSpineUp
+        weight: 1
+      - path: Armature/master/RotSpineUp/RotSpineUp_end
+        weight: 1
+      - path: Armature/master/rotTail
+        weight: 1
+      - path: Armature/master/rotTail/rotTail_end
+        weight: 1
+      - path: Armature/master/spineBase
+        weight: 1
+      - path: Armature/master/spineBase/spineDown
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/paw4_L
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/paw4_L/paw4_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/paw4_R
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/paw4_R/paw4_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/paw5_L
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/paw5_L/paw5_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/paw5_R
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/paw5_R/paw5_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/paw6_L
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/paw6_L/paw6_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/paw6_R
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/paw6_R/paw6_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/paw7_L
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/paw7_L/paw7_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/paw7_R
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/paw7_R/paw7_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006/spineDown.007
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006/spineDown.007/spineDown.008
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006/spineDown.007/spineDown.008/spineDown.009
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006/spineDown.007/spineDown.008/spineDown.009/spineDown.009_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/paw3_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/paw3_L/paw3_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/paw3_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/paw3_R/paw3_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/paw2_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/paw2_L/paw2_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/paw2_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/paw2_R/paw2_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_L/eye_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_L/eyeL
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_R/eye_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_R/eyeR
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_L/eyebrow_L.001
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_L/eyebrow_L.001/eyebrow_L.002
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_L/eyebrow_L.001/eyebrow_L.002/eyebrow_L.002_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_R/eyebrow_R.001
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_R/eyebrow_R.001/eyebrow_R.002
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_R/eyebrow_R.001/eyebrow_R.002/eyebrow_R.002_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/paw1_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/paw1_L/paw1_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/paw1_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/paw1_R/paw1_R_end
+        weight: 1
+      - path: body
+        weight: 1
+      - path: eyebrow
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|flip
+      takeName: Armature|flip
+      firstFrame: 0
+      lastFrame: 64
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: .996439219
+        functionName: FlipEnd
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/master
+        weight: 1
+      - path: Armature/master/eyeTracker
+        weight: 1
+      - path: Armature/master/eyeTracker/eyeTracker_end
+        weight: 1
+      - path: Armature/master/floor
+        weight: 1
+      - path: Armature/master/floor/floor_end
+        weight: 1
+      - path: Armature/master/pivotSpineDownA
+        weight: 1
+      - path: Armature/master/pivotSpineDownA/pivotSpineDownA_end
+        weight: 1
+      - path: Armature/master/pivotSpineDownB
+        weight: 1
+      - path: Armature/master/pivotSpineDownB/pivotSpineDownB_end
+        weight: 1
+      - path: Armature/master/pivotSpineUpA
+        weight: 1
+      - path: Armature/master/pivotSpineUpA/pivotSpineUpA_end
+        weight: 1
+      - path: Armature/master/pivotSpineUpB
+        weight: 1
+      - path: Armature/master/pivotSpineUpB/pivotSpineUpB_end
+        weight: 1
+      - path: Armature/master/rotEyebrow_L
+        weight: 1
+      - path: Armature/master/rotEyebrow_L/rotEyebrow_L_end
+        weight: 1
+      - path: Armature/master/rotEyebrow_R
+        weight: 1
+      - path: Armature/master/rotEyebrow_R/rotEyebrow_R_end
+        weight: 1
+      - path: Armature/master/RotSpineDown
+        weight: 1
+      - path: Armature/master/RotSpineDown/RotSpineDown_end
+        weight: 1
+      - path: Armature/master/RotSpineUp
+        weight: 1
+      - path: Armature/master/RotSpineUp/RotSpineUp_end
+        weight: 1
+      - path: Armature/master/rotTail
+        weight: 1
+      - path: Armature/master/rotTail/rotTail_end
+        weight: 1
+      - path: Armature/master/spineBase
+        weight: 1
+      - path: Armature/master/spineBase/spineDown
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/paw4_L
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/paw4_L/paw4_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/paw4_R
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/paw4_R/paw4_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/paw5_L
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/paw5_L/paw5_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/paw5_R
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/paw5_R/paw5_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/paw6_L
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/paw6_L/paw6_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/paw6_R
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/paw6_R/paw6_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/paw7_L
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/paw7_L/paw7_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/paw7_R
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/paw7_R/paw7_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006/spineDown.007
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006/spineDown.007/spineDown.008
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006/spineDown.007/spineDown.008/spineDown.009
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006/spineDown.007/spineDown.008/spineDown.009/spineDown.009_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/paw3_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/paw3_L/paw3_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/paw3_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/paw3_R/paw3_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/paw2_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/paw2_L/paw2_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/paw2_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/paw2_R/paw2_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_L/eye_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_L/eyeL
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_R/eye_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_R/eyeR
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_L/eyebrow_L.001
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_L/eyebrow_L.001/eyebrow_L.002
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_L/eyebrow_L.001/eyebrow_L.002/eyebrow_L.002_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_R/eyebrow_R.001
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_R/eyebrow_R.001/eyebrow_R.002
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_R/eyebrow_R.001/eyebrow_R.002/eyebrow_R.002_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/paw1_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/paw1_L/paw1_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/paw1_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/paw1_R/paw1_R_end
+        weight: 1
+      - path: body
+        weight: 1
+      - path: eyebrow
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|heal
+      takeName: Armature|heal
+      firstFrame: 0
+      lastFrame: 99
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: .177685961
+        functionName: PlayHealProcessSound
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: .330578506
+        functionName: PlayHealProcessSound
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: .495867759
+        functionName: PlayHealProcessSound
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: .743801653
+        functionName: PlayHealSound
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: .995867729
+        functionName: HealFinish
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/master
+        weight: 1
+      - path: Armature/master/eyeTracker
+        weight: 1
+      - path: Armature/master/eyeTracker/eyeTracker_end
+        weight: 1
+      - path: Armature/master/floor
+        weight: 1
+      - path: Armature/master/floor/floor_end
+        weight: 1
+      - path: Armature/master/pivotSpineDownA
+        weight: 1
+      - path: Armature/master/pivotSpineDownA/pivotSpineDownA_end
+        weight: 1
+      - path: Armature/master/pivotSpineDownB
+        weight: 1
+      - path: Armature/master/pivotSpineDownB/pivotSpineDownB_end
+        weight: 1
+      - path: Armature/master/pivotSpineUpA
+        weight: 1
+      - path: Armature/master/pivotSpineUpA/pivotSpineUpA_end
+        weight: 1
+      - path: Armature/master/pivotSpineUpB
+        weight: 1
+      - path: Armature/master/pivotSpineUpB/pivotSpineUpB_end
+        weight: 1
+      - path: Armature/master/rotEyebrow_L
+        weight: 1
+      - path: Armature/master/rotEyebrow_L/rotEyebrow_L_end
+        weight: 1
+      - path: Armature/master/rotEyebrow_R
+        weight: 1
+      - path: Armature/master/rotEyebrow_R/rotEyebrow_R_end
+        weight: 1
+      - path: Armature/master/RotSpineDown
+        weight: 1
+      - path: Armature/master/RotSpineDown/RotSpineDown_end
+        weight: 1
+      - path: Armature/master/RotSpineUp
+        weight: 1
+      - path: Armature/master/RotSpineUp/RotSpineUp_end
+        weight: 1
+      - path: Armature/master/rotTail
+        weight: 1
+      - path: Armature/master/rotTail/rotTail_end
+        weight: 1
+      - path: Armature/master/spineBase
+        weight: 1
+      - path: Armature/master/spineBase/spineDown
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/paw4_L
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/paw4_L/paw4_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/paw4_R
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/paw4_R/paw4_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/paw5_L
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/paw5_L/paw5_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/paw5_R
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/paw5_R/paw5_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/paw6_L
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/paw6_L/paw6_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/paw6_R
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/paw6_R/paw6_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/paw7_L
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/paw7_L/paw7_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/paw7_R
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/paw7_R/paw7_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006/spineDown.007
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006/spineDown.007/spineDown.008
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006/spineDown.007/spineDown.008/spineDown.009
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006/spineDown.007/spineDown.008/spineDown.009/spineDown.009_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/paw3_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/paw3_L/paw3_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/paw3_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/paw3_R/paw3_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/paw2_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/paw2_L/paw2_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/paw2_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/paw2_R/paw2_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_L/eye_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_L/eyeL
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_R/eye_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_R/eyeR
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_L/eyebrow_L.001
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_L/eyebrow_L.001/eyebrow_L.002
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_L/eyebrow_L.001/eyebrow_L.002/eyebrow_L.002_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_R/eyebrow_R.001
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_R/eyebrow_R.001/eyebrow_R.002
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_R/eyebrow_R.001/eyebrow_R.002/eyebrow_R.002_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/paw1_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/paw1_L/paw1_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/paw1_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/paw1_R/paw1_R_end
+        weight: 1
+      - path: body
+        weight: 1
+      - path: eyebrow
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|idle
+      takeName: Armature|idle
+      firstFrame: 0
+      lastFrame: 99
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/master
+        weight: 1
+      - path: Armature/master/eyeTracker
+        weight: 1
+      - path: Armature/master/eyeTracker/eyeTracker_end
+        weight: 1
+      - path: Armature/master/floor
+        weight: 1
+      - path: Armature/master/floor/floor_end
+        weight: 1
+      - path: Armature/master/pivotSpineDownA
+        weight: 1
+      - path: Armature/master/pivotSpineDownA/pivotSpineDownA_end
+        weight: 1
+      - path: Armature/master/pivotSpineDownB
+        weight: 1
+      - path: Armature/master/pivotSpineDownB/pivotSpineDownB_end
+        weight: 1
+      - path: Armature/master/pivotSpineUpA
+        weight: 1
+      - path: Armature/master/pivotSpineUpA/pivotSpineUpA_end
+        weight: 1
+      - path: Armature/master/pivotSpineUpB
+        weight: 1
+      - path: Armature/master/pivotSpineUpB/pivotSpineUpB_end
+        weight: 1
+      - path: Armature/master/rotEyebrow_L
+        weight: 1
+      - path: Armature/master/rotEyebrow_L/rotEyebrow_L_end
+        weight: 1
+      - path: Armature/master/rotEyebrow_R
+        weight: 1
+      - path: Armature/master/rotEyebrow_R/rotEyebrow_R_end
+        weight: 1
+      - path: Armature/master/RotSpineDown
+        weight: 1
+      - path: Armature/master/RotSpineDown/RotSpineDown_end
+        weight: 1
+      - path: Armature/master/RotSpineUp
+        weight: 1
+      - path: Armature/master/RotSpineUp/RotSpineUp_end
+        weight: 1
+      - path: Armature/master/rotTail
+        weight: 1
+      - path: Armature/master/rotTail/rotTail_end
+        weight: 1
+      - path: Armature/master/spineBase
+        weight: 1
+      - path: Armature/master/spineBase/spineDown
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/paw4_L
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/paw4_L/paw4_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/paw4_R
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/paw4_R/paw4_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/paw5_L
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/paw5_L/paw5_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/paw5_R
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/paw5_R/paw5_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/paw6_L
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/paw6_L/paw6_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/paw6_R
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/paw6_R/paw6_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/paw7_L
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/paw7_L/paw7_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/paw7_R
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/paw7_R/paw7_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006/spineDown.007
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006/spineDown.007/spineDown.008
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006/spineDown.007/spineDown.008/spineDown.009
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006/spineDown.007/spineDown.008/spineDown.009/spineDown.009_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/paw3_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/paw3_L/paw3_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/paw3_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/paw3_R/paw3_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/paw2_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/paw2_L/paw2_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/paw2_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/paw2_R/paw2_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_L/eye_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_L/eyeL
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_R/eye_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_R/eyeR
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_L/eyebrow_L.001
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_L/eyebrow_L.001/eyebrow_L.002
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_L/eyebrow_L.001/eyebrow_L.002/eyebrow_L.002_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_R/eyebrow_R.001
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_R/eyebrow_R.001/eyebrow_R.002
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_R/eyebrow_R.001/eyebrow_R.002/eyebrow_R.002_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/paw1_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/paw1_L/paw1_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/paw1_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/paw1_R/paw1_R_end
+        weight: 1
+      - path: body
+        weight: 1
+      - path: eyebrow
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|jump
+      takeName: Armature|jump
+      firstFrame: 0
+      lastFrame: 45
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: .350583971
+        functionName: Attack
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 1
+        functionName: ActionEnd
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: .502109706
+        functionName: AttackGroundImpact
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/master
+        weight: 1
+      - path: Armature/master/eyeTracker
+        weight: 1
+      - path: Armature/master/eyeTracker/eyeTracker_end
+        weight: 1
+      - path: Armature/master/floor
+        weight: 1
+      - path: Armature/master/floor/floor_end
+        weight: 1
+      - path: Armature/master/pivotSpineDownA
+        weight: 1
+      - path: Armature/master/pivotSpineDownA/pivotSpineDownA_end
+        weight: 1
+      - path: Armature/master/pivotSpineDownB
+        weight: 1
+      - path: Armature/master/pivotSpineDownB/pivotSpineDownB_end
+        weight: 1
+      - path: Armature/master/pivotSpineUpA
+        weight: 1
+      - path: Armature/master/pivotSpineUpA/pivotSpineUpA_end
+        weight: 1
+      - path: Armature/master/pivotSpineUpB
+        weight: 1
+      - path: Armature/master/pivotSpineUpB/pivotSpineUpB_end
+        weight: 1
+      - path: Armature/master/rotEyebrow_L
+        weight: 1
+      - path: Armature/master/rotEyebrow_L/rotEyebrow_L_end
+        weight: 1
+      - path: Armature/master/rotEyebrow_R
+        weight: 1
+      - path: Armature/master/rotEyebrow_R/rotEyebrow_R_end
+        weight: 1
+      - path: Armature/master/RotSpineDown
+        weight: 1
+      - path: Armature/master/RotSpineDown/RotSpineDown_end
+        weight: 1
+      - path: Armature/master/RotSpineUp
+        weight: 1
+      - path: Armature/master/RotSpineUp/RotSpineUp_end
+        weight: 1
+      - path: Armature/master/rotTail
+        weight: 1
+      - path: Armature/master/rotTail/rotTail_end
+        weight: 1
+      - path: Armature/master/spineBase
+        weight: 1
+      - path: Armature/master/spineBase/spineDown
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/paw4_L
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/paw4_L/paw4_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/paw4_R
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/paw4_R/paw4_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/paw5_L
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/paw5_L/paw5_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/paw5_R
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/paw5_R/paw5_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/paw6_L
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/paw6_L/paw6_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/paw6_R
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/paw6_R/paw6_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/paw7_L
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/paw7_L/paw7_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/paw7_R
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/paw7_R/paw7_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006/spineDown.007
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006/spineDown.007/spineDown.008
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006/spineDown.007/spineDown.008/spineDown.009
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006/spineDown.007/spineDown.008/spineDown.009/spineDown.009_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/paw3_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/paw3_L/paw3_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/paw3_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/paw3_R/paw3_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/paw2_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/paw2_L/paw2_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/paw2_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/paw2_R/paw2_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_L/eye_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_L/eyeL
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_R/eye_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_R/eyeR
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_L/eyebrow_L.001
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_L/eyebrow_L.001/eyebrow_L.002
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_L/eyebrow_L.001/eyebrow_L.002/eyebrow_L.002_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_R/eyebrow_R.001
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_R/eyebrow_R.001/eyebrow_R.002
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_R/eyebrow_R.001/eyebrow_R.002/eyebrow_R.002_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/paw1_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/paw1_L/paw1_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/paw1_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/paw1_R/paw1_R_end
+        weight: 1
+      - path: body
+        weight: 1
+      - path: eyebrow
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|knead
+      takeName: Armature|knead
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: .573839664
+        functionName: PlayerJumpAfterKnead
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: .995780587
+        functionName: ActionEnd
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/master
+        weight: 1
+      - path: Armature/master/eyeTracker
+        weight: 1
+      - path: Armature/master/eyeTracker/eyeTracker_end
+        weight: 1
+      - path: Armature/master/floor
+        weight: 1
+      - path: Armature/master/floor/floor_end
+        weight: 1
+      - path: Armature/master/pivotSpineDownA
+        weight: 1
+      - path: Armature/master/pivotSpineDownA/pivotSpineDownA_end
+        weight: 1
+      - path: Armature/master/pivotSpineDownB
+        weight: 1
+      - path: Armature/master/pivotSpineDownB/pivotSpineDownB_end
+        weight: 1
+      - path: Armature/master/pivotSpineUpA
+        weight: 1
+      - path: Armature/master/pivotSpineUpA/pivotSpineUpA_end
+        weight: 1
+      - path: Armature/master/pivotSpineUpB
+        weight: 1
+      - path: Armature/master/pivotSpineUpB/pivotSpineUpB_end
+        weight: 1
+      - path: Armature/master/rotEyebrow_L
+        weight: 1
+      - path: Armature/master/rotEyebrow_L/rotEyebrow_L_end
+        weight: 1
+      - path: Armature/master/rotEyebrow_R
+        weight: 1
+      - path: Armature/master/rotEyebrow_R/rotEyebrow_R_end
+        weight: 1
+      - path: Armature/master/RotSpineDown
+        weight: 1
+      - path: Armature/master/RotSpineDown/RotSpineDown_end
+        weight: 1
+      - path: Armature/master/RotSpineUp
+        weight: 1
+      - path: Armature/master/RotSpineUp/RotSpineUp_end
+        weight: 1
+      - path: Armature/master/rotTail
+        weight: 1
+      - path: Armature/master/rotTail/rotTail_end
+        weight: 1
+      - path: Armature/master/spineBase
+        weight: 1
+      - path: Armature/master/spineBase/spineDown
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/paw4_L
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/paw4_L/paw4_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/paw4_R
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/paw4_R/paw4_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/paw5_L
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/paw5_L/paw5_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/paw5_R
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/paw5_R/paw5_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/paw6_L
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/paw6_L/paw6_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/paw6_R
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/paw6_R/paw6_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/paw7_L
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/paw7_L/paw7_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/paw7_R
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/paw7_R/paw7_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006/spineDown.007
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006/spineDown.007/spineDown.008
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006/spineDown.007/spineDown.008/spineDown.009
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006/spineDown.007/spineDown.008/spineDown.009/spineDown.009_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/paw3_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/paw3_L/paw3_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/paw3_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/paw3_R/paw3_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/paw2_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/paw2_L/paw2_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/paw2_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/paw2_R/paw2_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_L/eye_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_L/eyeL
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_R/eye_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_R/eyeR
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_L/eyebrow_L.001
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_L/eyebrow_L.001/eyebrow_L.002
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_L/eyebrow_L.001/eyebrow_L.002/eyebrow_L.002_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_R/eyebrow_R.001
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_R/eyebrow_R.001/eyebrow_R.002
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_R/eyebrow_R.001/eyebrow_R.002/eyebrow_R.002_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/paw1_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/paw1_L/paw1_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/paw1_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/paw1_R/paw1_R_end
+        weight: 1
+      - path: body
+        weight: 1
+      - path: eyebrow
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|prepareAttack
+      takeName: Armature|prepareAttack
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/master
+        weight: 1
+      - path: Armature/master/eyeTracker
+        weight: 1
+      - path: Armature/master/eyeTracker/eyeTracker_end
+        weight: 1
+      - path: Armature/master/floor
+        weight: 1
+      - path: Armature/master/floor/floor_end
+        weight: 1
+      - path: Armature/master/pivotSpineDownA
+        weight: 1
+      - path: Armature/master/pivotSpineDownA/pivotSpineDownA_end
+        weight: 1
+      - path: Armature/master/pivotSpineDownB
+        weight: 1
+      - path: Armature/master/pivotSpineDownB/pivotSpineDownB_end
+        weight: 1
+      - path: Armature/master/pivotSpineUpA
+        weight: 1
+      - path: Armature/master/pivotSpineUpA/pivotSpineUpA_end
+        weight: 1
+      - path: Armature/master/pivotSpineUpB
+        weight: 1
+      - path: Armature/master/pivotSpineUpB/pivotSpineUpB_end
+        weight: 1
+      - path: Armature/master/rotEyebrow_L
+        weight: 1
+      - path: Armature/master/rotEyebrow_L/rotEyebrow_L_end
+        weight: 1
+      - path: Armature/master/rotEyebrow_R
+        weight: 1
+      - path: Armature/master/rotEyebrow_R/rotEyebrow_R_end
+        weight: 1
+      - path: Armature/master/RotSpineDown
+        weight: 1
+      - path: Armature/master/RotSpineDown/RotSpineDown_end
+        weight: 1
+      - path: Armature/master/RotSpineUp
+        weight: 1
+      - path: Armature/master/RotSpineUp/RotSpineUp_end
+        weight: 1
+      - path: Armature/master/rotTail
+        weight: 1
+      - path: Armature/master/rotTail/rotTail_end
+        weight: 1
+      - path: Armature/master/spineBase
+        weight: 1
+      - path: Armature/master/spineBase/spineDown
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/paw4_L
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/paw4_L/paw4_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/paw4_R
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/paw4_R/paw4_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/paw5_L
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/paw5_L/paw5_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/paw5_R
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/paw5_R/paw5_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/paw6_L
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/paw6_L/paw6_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/paw6_R
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/paw6_R/paw6_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/paw7_L
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/paw7_L/paw7_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/paw7_R
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/paw7_R/paw7_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006/spineDown.007
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006/spineDown.007/spineDown.008
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006/spineDown.007/spineDown.008/spineDown.009
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006/spineDown.007/spineDown.008/spineDown.009/spineDown.009_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/paw3_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/paw3_L/paw3_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/paw3_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/paw3_R/paw3_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/paw2_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/paw2_L/paw2_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/paw2_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/paw2_R/paw2_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_L/eye_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_L/eyeL
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_R/eye_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_R/eyeR
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_L/eyebrow_L.001
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_L/eyebrow_L.001/eyebrow_L.002
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_L/eyebrow_L.001/eyebrow_L.002/eyebrow_L.002_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_R/eyebrow_R.001
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_R/eyebrow_R.001/eyebrow_R.002
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_R/eyebrow_R.001/eyebrow_R.002/eyebrow_R.002_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/paw1_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/paw1_L/paw1_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/paw1_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/paw1_R/paw1_R_end
+        weight: 1
+      - path: body
+        weight: 1
+      - path: eyebrow
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|walk
+      takeName: Armature|walk
+      firstFrame: 0
+      lastFrame: 89
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: .385175169
+        functionName: MoveStart
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: .828571439
+        functionName: MoveEnd
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/master
+        weight: 1
+      - path: Armature/master/eyeTracker
+        weight: 1
+      - path: Armature/master/eyeTracker/eyeTracker_end
+        weight: 1
+      - path: Armature/master/floor
+        weight: 1
+      - path: Armature/master/floor/floor_end
+        weight: 1
+      - path: Armature/master/pivotSpineDownA
+        weight: 1
+      - path: Armature/master/pivotSpineDownA/pivotSpineDownA_end
+        weight: 1
+      - path: Armature/master/pivotSpineDownB
+        weight: 1
+      - path: Armature/master/pivotSpineDownB/pivotSpineDownB_end
+        weight: 1
+      - path: Armature/master/pivotSpineUpA
+        weight: 1
+      - path: Armature/master/pivotSpineUpA/pivotSpineUpA_end
+        weight: 1
+      - path: Armature/master/pivotSpineUpB
+        weight: 1
+      - path: Armature/master/pivotSpineUpB/pivotSpineUpB_end
+        weight: 1
+      - path: Armature/master/rotEyebrow_L
+        weight: 1
+      - path: Armature/master/rotEyebrow_L/rotEyebrow_L_end
+        weight: 1
+      - path: Armature/master/rotEyebrow_R
+        weight: 1
+      - path: Armature/master/rotEyebrow_R/rotEyebrow_R_end
+        weight: 1
+      - path: Armature/master/RotSpineDown
+        weight: 1
+      - path: Armature/master/RotSpineDown/RotSpineDown_end
+        weight: 1
+      - path: Armature/master/RotSpineUp
+        weight: 1
+      - path: Armature/master/RotSpineUp/RotSpineUp_end
+        weight: 1
+      - path: Armature/master/rotTail
+        weight: 1
+      - path: Armature/master/rotTail/rotTail_end
+        weight: 1
+      - path: Armature/master/spineBase
+        weight: 1
+      - path: Armature/master/spineBase/spineDown
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/paw4_L
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/paw4_L/paw4_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/paw4_R
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/paw4_R/paw4_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/paw5_L
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/paw5_L/paw5_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/paw5_R
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/paw5_R/paw5_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/paw6_L
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/paw6_L/paw6_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/paw6_R
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/paw6_R/paw6_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/paw7_L
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/paw7_L/paw7_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/paw7_R
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/paw7_R/paw7_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006/spineDown.007
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006/spineDown.007/spineDown.008
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006/spineDown.007/spineDown.008/spineDown.009
+        weight: 1
+      - path: Armature/master/spineBase/spineDown/spineDown.001/spineDown.002/spineDown.003/spineDown.004/spineDown.005/spineDown.006/spineDown.007/spineDown.008/spineDown.009/spineDown.009_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/paw3_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/paw3_L/paw3_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/paw3_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/paw3_R/paw3_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/paw2_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/paw2_L/paw2_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/paw2_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/paw2_R/paw2_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_L/eye_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_L/eyeL
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_R/eye_R_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eye_R/eyeR
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_L/eyebrow_L.001
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_L/eyebrow_L.001/eyebrow_L.002
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_L/eyebrow_L.001/eyebrow_L.002/eyebrow_L.002_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_R/eyebrow_R.001
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_R/eyebrow_R.001/eyebrow_R.002
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/neck/head/eyebrow
+          1/eyebrow_R/eyebrow_R.001/eyebrow_R.002/eyebrow_R.002_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/paw1_L
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/paw1_L/paw1_L_end
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/paw1_R
+        weight: 1
+      - path: Armature/master/spineBase/spineUp/spineUp.001/spineUp.002/spineUp.003/paw1_R/paw1_R_end
+        weight: 1
+      - path: body
+        weight: 1
+      - path: eyebrow
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

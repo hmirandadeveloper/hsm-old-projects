@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+	  xmlns:ui="http://java.sun.com/jsf/facelets"
+	  xmlns:p="http://primefaces.org/ui">
+
+	<h:head>
+		<title>Funcionario</title>
+	</h:head>
+	
+	<h:body>
+	
+	<p:growl id="messages" />
+	
+	<p>Cadastro de Funcionario</p>
+
+	<h:form>
+		<h:dataTable id="funcionario_listagem"
+			value="#{funcionarioMB.funcionarios}" var="funcionario"
+			cellpadding="10">
+			<h:column>
+				<f:facet name="header">Matrícula</f:facet>
+					#{funcionario.matricula}
+				</h:column>
+			<h:column>
+				<f:facet name="header">Nome</f:facet>
+					#{funcionario.nome}
+				</h:column>
+			<h:column>
+				<f:facet name="header">Sobrenome</f:facet>
+					#{funcionario.sobrenome}
+				</h:column>
+			<h:column>
+				<f:facet name="header">Cargo</f:facet>
+					#{funcionario.cargo.descricao}
+			</h:column>
+			<h:column>
+				<f:facet name="header"></f:facet>
+					<h:commandButton action="#{funcionarioMB.atualizarFuncionario(funcionario.idFuncionario)}"
+					value="Alterar"></h:commandButton>
+			</h:column>	
+			<h:column>
+				<f:facet name="header"></f:facet>
+					<h:commandButton action="#{funcionarioMB.removerFuncionario(funcionario.idFuncionario)}" 
+					value="Remover"></h:commandButton>
+			</h:column>							
+		</h:dataTable>
+		<h:panelGrid columns="2">
+
+			<h:outputText value="Estabelecimento: " />
+			<h:outputText
+				value="#{funcionarioMB.estabelecimentoDTO.nomeFantasia}" />
+
+			<h:outputLabel for="funcionario_nome" value="Nome: " />
+			<h:inputText id="funcionario_nome"
+				value="#{funcionarioMB.funcionarioDTOSelecionado.nome}" />
+
+			<h:outputLabel for="funcionario_sobrenome" value="Sobrenome: " />
+			<h:inputText id="funcionario_sobrenome"
+				value="#{funcionarioMB.funcionarioDTOSelecionado.sobrenome}" />
+
+			<h:outputLabel for="funcionario_matricula" value="Matrícula: " />
+			<h:inputText id="funcionario_matricula"
+				value="#{funcionarioMB.funcionarioDTOSelecionado.matricula}" />
+				
+			<h:outputLabel for="funcionario_usuario_id" value="Usuário ID: " />
+			<h:outputText id="funcionario_usuario_id"
+				value="#{funcionarioMB.funcionarioDTOSelecionado.usuario.idUsuario}" />
+
+			<h:outputLabel for="funcionario_usuario_login" value="Usuário: " />
+			<h:inputText id="funcionario_usuario_login"
+				value="#{funcionarioMB.funcionarioDTOSelecionado.usuario.login}" />
+
+			<h:outputLabel for="funcionario_usuario_senha" value="Senha: " />
+			<h:inputSecret id="funcionario_usuario_senha"
+				value="#{funcionarioMB.funcionarioDTOSelecionado.usuario.senha}" />
+
+			<h:outputLabel for="funcionario_cargo" value="Cargo: " />
+			<h:selectOneMenu id="funcionario_cargo"
+				value="#{funcionarioMB.funcionarioDTOSelecionado.cargo}"
+				converter="cargoConverter">
+				<f:selectItems value="#{cargoMB.cargos}" var="cargo"
+					itemLabel="#{cargo.descricao}" />
+			</h:selectOneMenu>
+
+			<h:commandButton action="#{funcionarioMB.atualizarFuncionario()}"
+				value="Salvar Alterações" />
+
+		</h:panelGrid>
+
+	</h:form>
+</h:body>
+</html>

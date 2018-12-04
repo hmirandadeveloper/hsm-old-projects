@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Produto</title>
+</h:head>
+
+<h:body>
+
+	<p:growl id="messages" />
+	
+	<p>Cadastro de Produto</p>
+
+	<h:form>
+			<h:dataTable id="cardapio_produto_listagem"
+			value="#{cardapioProdutoMB.cardapioProdutos}" var="cardapioProduto"
+			cellpadding="10">
+			<h:column>
+				<f:facet name="header">Nome</f:facet>
+					#{cardapioProduto.produto.nome}
+				</h:column>
+			<h:column>
+				<f:facet name="header">Descrição</f:facet>
+					#{cardapioProduto.produto.descricao}
+				</h:column>
+			<h:column>
+				<f:facet name="header">Preço</f:facet>
+					#{cardapioProduto.produto.preco}
+				</h:column>
+			<h:column>
+				<f:facet name="header">Preço Promocional</f:facet>
+					#{cardapioProduto.produto.precoPromocional}
+			</h:column>
+			<h:column>
+				<f:facet name="header">Pontuação Fidelidade</f:facet>
+					#{cardapioProduto.produto.pontuacaoFidelidade}
+			</h:column>			
+			<h:column>
+				<f:facet name="header"></f:facet>
+					<h:commandButton action="#{cardapioProdutoMB.atualizarCardapioProduto(cardapioProduto.idcardapioProduto)}"
+					value="Alterar"></h:commandButton>
+			</h:column>	
+			<h:column>
+				<f:facet name="header"></f:facet>
+					<h:commandButton action="#{cardapioProdutoMB.removerCardapioProduto(cardapioProduto.idcardapioProduto)}" 
+					value="Remover"></h:commandButton>
+			</h:column>							
+		</h:dataTable>
+	
+		<h:panelGrid columns="3">
+
+			<h:outputText value="Estabelecimento: " />
+			<h:outputText id="produto_estabelecimento"
+				value="#{cardapioProdutoMB.estabelecimentoDTO.nomeFantasia}" 
+				title ="Nome Fantasia do Estabelecimento do usuário logado"/>
+			<p:tooltip for="produto_estabelecimento" style="font-size: 12px"></p:tooltip>
+
+			<h:outputLabel for="cardapioProduto_nome" value="Nome: " />
+			<h:inputText id="cardapioProduto_nome"
+				value="#{cardapioProdutoMB.cardapioProdutoDTOSelecionado.produto.nome}" />
+			<p:tooltip for="cardapioProduto_nome" style="font-size: 12px"></p:tooltip>
+				
+				
+			<h:outputLabel for="cardapioProduto_descricao" value="Descrição: " />
+			<h:inputText id="cardapioProduto_descricao"
+				value="#{cardapioProdutoMB.cardapioProdutoDTOSelecionado.produto.descricao}" />
+			<p:tooltip for="cardapioProduto_descricao" style="font-size: 12px"></p:tooltip>
+				
+				
+			<h:outputLabel for="cardapioProduto_preco" value="Preço: R$ " />
+			<h:inputText id="cardapioProduto_preco"
+				value="#{cardapioProdutoMB.cardapioProdutoDTOSelecionado.produto.preco}">
+					<f:convertNumber minFractionDigits="2"/>
+				</h:inputText>
+			<p:tooltip for="cardapioProduto_preco" style="font-size: 12px"></p:tooltip>	
+				
+			<h:outputLabel for="cardapioProduto_preco_promocional" value="Preço Promocional: R$ " />
+			<h:inputText id="cardapioProduto_preco_promocional"
+				value="#{cardapioProdutoMB.cardapioProdutoDTOSelecionado.produto.precoPromocional}">
+					<f:convertNumber minFractionDigits="2"/>
+				</h:inputText>
+			<p:tooltip for="cardapioProduto_preco_promocional" style="font-size: 12px"></p:tooltip>	
+				
+			<h:outputLabel for="cardapioProduto_pontuacao_fidelidade" value="Pontuação Fidelidade: " />
+			<h:inputText id="cardapioProduto_pontuacao_fidelidade"
+				value="#{cardapioProdutoMB.cardapioProdutoDTOSelecionado.produto.pontuacaoFidelidade}" />																
+			<p:tooltip for="cardapioProduto_pontuacao_fidelidade" style="font-size: 12px"></p:tooltip>
+
+			<h:outputLabel for="cardapioProduto_tipo" value="Cardápio: " />
+			<h:selectOneMenu id="cardapioProduto_tipo"
+				value="#{cardapioProdutoMB.cardapioProdutoDTOSelecionado.cardapio}"
+				converter="cardapioConverter">
+				
+				<f:selectItems value="#{cardapioMB.cardapios}" var="cardapio"
+					itemLabel="#{cardapio.nome}"/>
+			</h:selectOneMenu>
+			<p:tooltip for="cardapioProduto_tipo" style="font-size: 12px"></p:tooltip>
+
+			<h:commandButton action="#{cardapioProdutoMB.atualizarCardapioProduto()}"
+				value="Salvar Alterações" />
+
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>

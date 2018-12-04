@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Cliente</title>
+</h:head>
+
+<h:body>
+
+	<p:growl id="messages" />
+
+	<p>Cadastro de Cliente</p>
+
+	<h:form>
+		<h:panelGrid columns="2">
+			<h:outputLabel for="cliente_nome" value="Nome: " />
+			<h:outputText id="cliente_nome" value="#{clienteMB.clienteDTOLogado.nome}" />
+
+			<h:outputLabel for="cliente_sobrenome" value="Sobrenome: " />
+			<h:outputText id="cliente_sobrenome"
+				value="#{clienteMB.clienteDTOLogado.sobrenome}" />
+
+			<h:outputLabel for="cliente_cpf" value="CPF: " />
+			<h:outputText id="cliente_cpf" value="#{clienteMB.clienteDTOLogado.cpf}" />
+
+			<h:outputLabel for="cliente_telefone" value="Telefone: " />
+			<h:outputText id="cliente_telefone"
+				value="#{clienteMB.clienteDTOLogado.telefone}" />
+
+			<h:outputLabel for="cliente_email" value="Email: " />
+			<h:outputText id="cliente_email" value="#{clienteMB.clienteDTOLogado.email}" />
+
+			<h:outputLabel for="cliente_sexo" value="Sexo: " />
+			<h:outputText id="cliente_sexo" value="#{clienteMB.clienteDTOLogado.sexo}" />
+
+
+
+			<h:outputLabel for="cliente_usuario_login" value="Login: " />
+			<h:outputText id="cliente_usuario_login"
+				value="#{clienteMB.clienteDTOLogado.usuario.login}" />
+
+
+
+			<h:outputLabel for="cliente_endereco_logradouro" value="Logradouro: " />
+			<h:outputText id="cliente_endereco_logradouro"
+				value="#{clienteMB.clienteDTOLogado.enderecos[0].logradouro}" />
+
+			<h:outputLabel for="cliente_endereco_numero" value="Numero: " />
+			<h:outputText id="cliente_endereco_numero"
+				value="#{clienteMB.clienteDTOLogado.enderecos[0].numero}" />
+
+			<h:outputLabel for="cliente_endereco_complemento"
+				value="Complemento: " />
+			<h:outputText id="cliente_endereco_complemento"
+				value="#{clienteMB.clienteDTOLogado.enderecos[0].complemento}" />
+
+			<h:outputLabel for="cliente_endereco_bairro" value="Bairro:  " />
+			<h:outputText id="cliente_endereco_bairro"
+				value="#{clienteMB.clienteDTOLogado.enderecos[0].bairro}" />
+
+			<h:outputLabel for="cliente_endereco_cidade" value="Cidade: " />
+			<h:outputText id="cliente_endereco_cidade"
+				value="#{clienteMB.clienteDTOLogado.enderecos[0].cidade}" />
+
+			<h:outputLabel for="cliente_endereco_uf" value="UF: " />
+			<h:outputText id="cliente_endereco_uf"
+				value="#{clienteMB.clienteDTOLogado.enderecos[0].uf}" />
+
+			<h:outputLabel for="cliente_endereco_cep" value="CEP: " />
+			<h:outputText id="cliente_endereco_cep"
+				value="#{clienteMB.clienteDTOLogado.enderecos[0].cep}" />
+
+		</h:panelGrid>
+		<br />
+		<br />
+		<h:outputText value="Endereços adicionais: " />
+		<h:dataTable value="#{clienteMB.clienteDTOLogado.enderecos}"
+			var="endereco" cellspacing="10" cellpadding="5">
+			<h:column>
+				<f:facet name="header">Logradouro</f:facet>
+					#{endereco.logradouro}
+				</h:column>
+
+			<h:column>
+				<f:facet name="header">Numero</f:facet>
+					#{endereco.numero}
+				</h:column>
+
+			<h:column>
+				<f:facet name="header">Complemento</f:facet>
+					#{endereco.complemento}
+				</h:column>
+
+			<h:column>
+				<f:facet name="header">Bairro</f:facet>
+					#{endereco.bairro}
+				</h:column>
+
+			<h:column>
+				<f:facet name="header">Cidade</f:facet>
+					#{endereco.cidade}
+				</h:column>
+
+			<h:column>
+				<f:facet name="header">UF</f:facet>
+					#{endereco.uf}
+				</h:column>
+
+			<h:column>
+				<f:facet name="header">CEP</f:facet>
+					#{endereco.cep}
+				</h:column>
+
+		</h:dataTable>
+		
+	</h:form>
+
+</h:body>
+</html>

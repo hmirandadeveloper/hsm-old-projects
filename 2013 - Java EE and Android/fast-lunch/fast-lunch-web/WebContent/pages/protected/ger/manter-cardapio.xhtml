@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Cardapio</title>
+</h:head>
+
+<h:body>
+
+	<p:growl id="messages" />
+
+	<p>Cadastro de Cardapio</p>
+
+	<h:form>
+		<h:dataTable id="cardapio_listagem" value="#{cardapioMB.cardapios}"
+			var="cardapio" cellpadding="10">
+			<h:column>
+				<f:facet name="header">Nome</f:facet>
+					#{cardapio.nome}
+				</h:column>
+			<h:column>
+				<f:facet name="header">Validade</f:facet>
+				<h:outputText value="#{cardapio.validade}">
+					<f:convertDateTime pattern="dd/MM/yyyy" />
+				</h:outputText>
+			</h:column>
+			<h:column>
+				<f:facet name="header"></f:facet>
+				<h:commandButton
+					action="#{cardapioMB.atualizarCardapio(cardapio.idCardapio)}"
+					value="Alterar"></h:commandButton>
+			</h:column>
+			<h:column>
+				<f:facet name="header"></f:facet>
+				<h:commandButton
+					action="#{cardapioMB.removerCardapio(cardapio.idCardapio)}"
+					value="Remover"></h:commandButton>
+			</h:column>
+		</h:dataTable>
+		<h:panelGrid columns="2">
+
+			<h:outputText value="Estabelecimento: " />
+			<h:outputText value="#{cardapioMB.estabelecimentoDTO.nomeFantasia}" />
+
+			<h:outputLabel for="cardapio_nome" value="Nome: " />
+			<h:inputText id="cardapio_nome"
+				value="#{cardapioMB.cardapioDTOSelecionado.nome}" />
+
+			<h:outputLabel for="cardapio_validade" value="Validade: " />
+			<h:inputText id="cardapio_validade"
+				value="#{cardapioMB.cardapioDTOSelecionado.validade}">
+				<f:convertDateTime pattern="dd/MM/yyyy" />
+			</h:inputText>
+
+			<h:outputLabel for="cardapio_tipo" value="Tipo de Cardápio: " />
+			<h:selectOneMenu id="cardapio_tipo"
+				value="#{cardapioMB.cardapioDTOSelecionado.tipoCardapio}"
+				converter="tipoCardapioConverter">
+				<f:selectItems value="#{tipoCardapioMB.tipoCardapios}" var="tipoCardapio"
+					itemLabel="#{tipoCardapio.nome}" />
+			</h:selectOneMenu>
+
+			<h:commandButton action="#{cardapioMB.atualizarCardapio()}"
+				value="Salvar Alterações" />
+
+		</h:panelGrid>
+
+	</h:form>
+</h:body>
+</html>

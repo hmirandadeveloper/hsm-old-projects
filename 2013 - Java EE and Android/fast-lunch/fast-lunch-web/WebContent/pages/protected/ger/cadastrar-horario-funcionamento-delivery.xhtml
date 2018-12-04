@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Horário de Funcionamento do Delivery</title>
+</h:head>
+
+<h:body>
+
+	<p:growl id="messages" />
+
+	<p>Cadastro de Horário de Funcionamento do Delivery</p>
+
+	<h:form>
+		<h:panelGrid columns="2">
+
+			<h:outputText value="Estabelecimento: " />
+			<h:outputText
+				value="#{horarioFuncionamentoDeliveryMB.estabelecimentoDTO.nomeFantasia}" />
+
+			<h:outputLabel for="horarioFuncionamentoDelivery_abertura" value="Horário de Abertura: " />
+			<h:inputText id="horarioFuncionamentoDelivery_abertura"
+				value="#{horarioFuncionamentoDeliveryMB.horarioFuncionamentoDeliveryDTO.horarioFuncionamento.horarioAbertura}">
+					<f:convertDateTime pattern="HH:mm" />
+				</h:inputText>
+
+			<h:outputLabel for="horarioFuncionamentoDelivery_fechamento" value="Horário de Fechamento: " />
+			<h:inputText id="horarioFuncionamentoDelivery_fechamento"
+				value="#{horarioFuncionamentoDeliveryMB.horarioFuncionamentoDeliveryDTO.horarioFuncionamento.horarioFechamento}">
+					<f:convertDateTime pattern="HH:mm" />
+				</h:inputText>
+
+			<h:outputLabel for="horarioFuncionamentoDelivery_dia_semana" value="Dia da Semana: " />
+			<h:selectOneMenu id="horarioFuncionamentoDelivery_dia_semana"
+				value="#{horarioFuncionamentoDeliveryMB.horarioFuncionamentoDeliveryDTO.horarioFuncionamento.diaSemana}">
+				<f:selectItems value="#{horarioFuncionamentoDeliveryMB.diasSemana}" var="dia"
+					itemLabel="#{dia}" itemValue="#{dia}" />
+			</h:selectOneMenu>
+
+			<h:commandButton action="#{horarioFuncionamentoDeliveryMB.salvarHorarioFuncionamentoDelivery()}"
+				value="Salvar Horário de Funcionamento (Delivery)" />
+
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>

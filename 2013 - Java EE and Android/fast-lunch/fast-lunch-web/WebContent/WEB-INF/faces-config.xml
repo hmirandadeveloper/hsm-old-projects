@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faces-config
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd"
+    version="2.0">
+
+    <!-- CONVERSORES -->
+	<converter>
+		<converter-id>cargoConverter</converter-id>
+		<converter-class>converter.CargoConverter</converter-class>
+	</converter>
+	<converter>
+		<converter-id>tipoCardapioConverter</converter-id>
+		<converter-class>converter.TipoCardapioConverter</converter-class>
+	</converter>
+	<converter>
+		<converter-id>tipoPagamentoConverter</converter-id>
+		<converter-class>converter.TipoPagamentoConverter</converter-class>
+	</converter>
+	<converter>
+		<converter-id>cardapioConverter</converter-id>
+		<converter-class>converter.CardapioConverter</converter-class>
+	</converter>
+	<converter>
+		<converter-id>cardapioProdutoConverter</converter-id>
+		<converter-class>converter.CardapioProdutoConverter</converter-class>
+	</converter>
+	<converter>
+		<converter-id>enumConverter</converter-id>
+		<converter-class>converter.EnumConverter</converter-class>
+	</converter>
+	
+	<!-- NAVEGAÇÃO -->
+	<navigation-rule>
+	    <from-view-id>/pages/*</from-view-id>
+	    
+	    <navigation-case>
+	        <from-outcome>cadastrar_cliente</from-outcome>
+	        <to-view-id>/pages/public/cliente/cadastrar-cliente.xhtml</to-view-id>
+	    </navigation-case>
+	    
+	    <navigation-case>
+	        <from-outcome>manter_cliente</from-outcome>
+	        <to-view-id>/pages/protected/user/manter-cliente.xhtml</to-view-id>
+	    </navigation-case>
+
+	    <navigation-case>
+	        <from-outcome>adicionar_endereco_cliente</from-outcome>
+	        <to-view-id>/pages/protected/user/manter-endereco-adicional-cliente.xhtml</to-view-id>
+	    </navigation-case>	    	    	    
+	</navigation-rule>
+
+</faces-config>

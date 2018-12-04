@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-catalog="dbfastlunch" match-name="tb_cardapio"/>
+  <table-filter match-catalog="dbfastlunch" match-name="tb_cardapio_produto"/>
+  <table-filter match-catalog="dbfastlunch" match-name="tb_cargo"/>
+  <table-filter match-catalog="dbfastlunch" match-name="tb_cliente"/>
+  <table-filter match-catalog="dbfastlunch" match-name="tb_cliente_endereco"/>
+  <table-filter match-catalog="dbfastlunch" match-name="tb_delivery"/>
+  <table-filter match-catalog="dbfastlunch" match-name="tb_endereco"/>
+  <table-filter match-catalog="dbfastlunch" match-name="tb_estabelecimento"/>
+  <table-filter match-catalog="dbfastlunch" match-name="tb_fidelidade_troca"/>
+  <table-filter match-catalog="dbfastlunch" match-name="tb_frete"/>
+  <table-filter match-catalog="dbfastlunch" match-name="tb_funcionario"/>
+  <table-filter match-catalog="dbfastlunch" match-name="tb_horario_funcionamento"/>
+  <table-filter match-catalog="dbfastlunch" match-name="tb_horario_funcionamento_delivery"/>
+  <table-filter match-catalog="dbfastlunch" match-name="tb_horario_funcionamento_estabelecimento"/>
+  <table-filter match-catalog="dbfastlunch" match-name="tb_item_pedido"/>
+  <table-filter match-catalog="dbfastlunch" match-name="tb_pedido"/>
+  <table-filter match-catalog="dbfastlunch" match-name="tb_produto"/>
+  <table-filter match-catalog="dbfastlunch" match-name="tb_status_pedido"/>
+  <table-filter match-catalog="dbfastlunch" match-name="tb_tipo_cardapio"/>
+  <table-filter match-catalog="dbfastlunch" match-name="tb_tipo_pagamento"/>
+  <table-filter match-catalog="dbfastlunch" match-name="tb_tipo_pagamento_pedido"/>
+  <table-filter match-catalog="dbfastlunch" match-name="tb_usuario"/>
+</hibernate-reverse-engineering>

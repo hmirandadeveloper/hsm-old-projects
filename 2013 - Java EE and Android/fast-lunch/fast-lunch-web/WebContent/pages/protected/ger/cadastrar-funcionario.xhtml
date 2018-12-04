@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Funcionario</title>
+</h:head>
+
+<h:body>
+
+	<p:growl id="messages" />
+
+	<p>Cadastro de Funcionario</p>
+
+	<h:form>
+		<h:panelGrid columns="2">
+
+			<h:outputText value="Estabelecimento: " />
+			<h:outputText
+				value="#{funcionarioMB.estabelecimentoDTO.nomeFantasia}" />
+
+			<h:outputLabel for="funcionario_nome" value="Nome: " />
+			<h:inputText id="funcionario_nome"
+				value="#{funcionarioMB.funcionarioDTO.nome}" />
+
+			<h:outputLabel for="funcionario_sobrenome" value="Sobrenome: " />
+			<h:inputText id="funcionario_sobrenome"
+				value="#{funcionarioMB.funcionarioDTO.sobrenome}" />
+
+			<h:outputLabel for="funcionario_matricula" value="Matrícula: " />
+			<h:inputText id="funcionario_matricula"
+				value="#{funcionarioMB.funcionarioDTO.matricula}" />
+
+			<h:outputLabel for="funcionario_usuario_login" value="Usuário: " />
+			<h:inputText id="funcionario_usuario_login"
+				value="#{funcionarioMB.funcionarioDTO.usuario.login}" />
+
+			<h:outputLabel for="funcionario_usuario_senha" value="Senha: " />
+			<h:inputText id="funcionario_usuario_senha"
+				value="#{funcionarioMB.funcionarioDTO.usuario.senha}" />
+
+			<h:outputLabel for="funcionario_usuario_tipo" value="Tipo de Usuário: " />
+			<h:selectOneMenu id="funcionario_usuario_tipo"
+				value="#{funcionarioMB.funcionarioDTO.usuario.tipoUsuario}">
+				<f:selectItems value="#{usuarioMB.tipoUsuarioFuncionario}" var="tipoUsuario"
+					itemLabel="#{tipoUsuario}" itemValue="#{tipoUsuario}" />
+			</h:selectOneMenu>
+
+			<h:outputLabel for="funcionario_cargo" value="Cargo: " />
+			<h:selectOneMenu id="funcionario_cargo"
+				value="#{funcionarioMB.funcionarioDTO.cargo}"
+				converter="cargoConverter">
+				<f:selectItems value="#{cargoMB.cargos}" var="cargo"
+					itemLabel="#{cargo.descricao}" />
+			</h:selectOneMenu>
+
+			<h:commandButton action="#{funcionarioMB.salvarFuncionario()}"
+				value="Salvar Funcionario" />
+
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>

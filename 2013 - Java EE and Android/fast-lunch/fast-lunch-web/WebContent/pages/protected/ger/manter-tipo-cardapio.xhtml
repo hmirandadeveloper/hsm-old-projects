@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Cadastro de Tipo de Cardapio</title>
+</h:head>
+
+<h:body>
+
+	<p:growl id="messages" />
+
+	<h:form>
+		<h:outputLabel value="Estabelecimento: " />
+		<h:outputLabel
+			value="#{tipoCardapioMB.estabelecimentoDTO.nomeFantasia}" />
+
+		<h:dataTable value="#{tipoCardapioMB.tipoCardapios}"
+			var="tipoCardapio" cellspacing="10" cellpadding="5">
+			<h:column>
+				<f:facet name="header">Nome</f:facet>
+					#{tipoCardapio.nome}
+			</h:column>
+			<h:column>
+				<f:facet name="header">Descrição</f:facet>
+					#{tipoCardapio.descricao}
+			</h:column>
+			<h:column>
+				<f:facet name="header"></f:facet>
+				<h:commandButton
+					action="#{tipoCardapioMB.atualizarTipoCardapio(tipoCardapio.idTipoCardapio)}"
+					value="Alterar" />
+			</h:column>
+			<h:column>
+				<f:facet name="header"></f:facet>
+				<h:commandButton
+					action="#{tipoCardapioMB.removerTipoCardapio(tipoCardapio.idTipoCardapio)}"
+					value="Remover" />
+			</h:column>
+
+		</h:dataTable>
+
+		<h:panelGrid columns="2">
+
+			<h:outputLabel for="tipo-cardapio_nome" value="Nome: " />
+			<h:inputText id="tipo-cardapio_nome"
+				value="#{tipoCardapioMB.tipoCardapioDTOSelecionado.nome}" />
+			<h:outputLabel for="tipo-cardapio_descricao" value="Descrição: " />
+			<h:inputText id="tipo-cardapio_descricao"
+				value="#{tipoCardapioMB.tipoCardapioDTOSelecionado.descricao}" />
+
+			<h:commandButton action="#{tipoCardapioMB.atualizarTipoCardapio()}"
+				value="Salvar Alterações" />
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>

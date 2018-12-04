@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Memory Game</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="game_title">Touch to Start Game!</string>
+    <string name="score_lb">Score: </string>
+    <string name="gameover">Game Over!</string>
+    <string name="turn">Play!</string>
+    <string name="player_lb">Player: </string>
+    <string name="wait">Watch and wait!</string>
+    <string name="validation">Wrong Cards! Wait.</string>
+    <string name="win">Win!!!</string>
+    <string name="lose">Lose!!!</string>
+    <string name="title_activity_login">Login</string>
+    <string name="action_settings">Settings</string>
+    <string name="login">Identification</string>
+    <string name="user_lb">User</string>
+    <string name="welcome">Welcome: </string>
+    <string name="bt_new_game">New Game</string>
+    <string name="bt_back">Back</string>
+    <string name="bt_login">Next</string>
+    <string name="bt_ranking">View Ranking</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_ranking">RankingActivity</string>
+    <string name="list_ranking"> Match Ranking</string>
+    <string name="name_empty">Please, enter your Name</string>
+
+</resources>
